@@ -8,6 +8,7 @@ var urlRouterParam = function GetQueryString(name, url) {
     } else {
         var r = url.match(reg);
     }
+    //加密的url处理
     if (r != null) return decodeURIComponent(r[1]);
     return null;
 };
